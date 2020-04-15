@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Weather in your city</title>
+
+{% if err_text %}
+<h2> {{ err_text }}</h2>
+{% else %}
+<h2>Some error in our weather system</h2>
+{% endif %}
+
+
+<a href="./">Back to default screen</a>

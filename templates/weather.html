@@ -1,0 +1,38 @@
+<!doctype html>
+<title>Weather</title>
+
+{% if myname %}
+<h2>Weather in  {{ myname }}</h2>
+{% else %}
+<h2>Weather in Unknown City </h2>
+{% endif %}
+
+{% if current_temp %}
+<p>Temperature: {{ current_temp }} Celsious</p>
+{% else %}
+<p>Temperature: Unknown</p>
+{% endif %}
+
+{% if current_pressure %}
+<p>Pressure: {{ current_pressure }} Hpa</p>
+{% else %}
+<p>Pressure: Unknown</p>
+{% endif %}
+
+{% if current_humidity %}
+<p>Humidity: {{ current_humidity }} percent</p>
+{% else %}
+<p>Humidity: Unknown</p>
+{% endif %}
+
+{% if current_wind %}
+<p>Wind: {{ current_wind }} meters per second</p>
+{% else %}
+<p>Wind: Unknown </p>
+{% endif %}
+
+<a href="./">Try another city</a>
+
+ 
+
+
