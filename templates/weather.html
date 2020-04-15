@@ -8,25 +8,25 @@
 {% endif %}
 
 {% if current_temp %}
-<p>Temperature: {{ current_temp }} Celsious</p>
+<p>Temperature: {{ "%.2f"|format(current_temp) }} Celsious</p>
 {% else %}
 <p>Temperature: Unknown</p>
 {% endif %}
 
 {% if current_pressure %}
-<p>Pressure: {{ current_pressure }} Hpa</p>
+<p>Pressure: {{ "%.2f"|format(current_pressure) }} Hpa</p>
 {% else %}
 <p>Pressure: Unknown</p>
 {% endif %}
 
 {% if current_humidity %}
-<p>Humidity: {{ current_humidity }} percent</p>
+<p>Humidity: {{ "%.2f"|format(current_humidity) }} percent</p>
 {% else %}
 <p>Humidity: Unknown</p>
 {% endif %}
 
 {% if current_wind %}
-<p>Wind: {{ current_wind }} meters per second</p>
+<p>Wind: {{ "%.2f"|format(current_wind) }} meters per second</p>
 {% else %}
 <p>Wind: Unknown </p>
 {% endif %}
